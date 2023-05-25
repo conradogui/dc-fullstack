@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(167, 167, 167);
+    margin: 0;
+    padding: 20px;
+}
+main {
+    border: 1px solid black;
+    display: block;
+    position: relative;
+    max-width: 400px;   
+    margin: auto; 
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 20px;
+    border-radius: 8px;
+}
+form {
+    border-top: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+input {
+    margin-left: 0;
+    border-radius: 5px;
+}
+div {
+    margin: 8px;
+    display: grid;
+    align-items: start;
+}
+h1 {
+    color: rgb(64, 64, 207);
+    text-align: center;
+}
+.tuf {
+    margin-bottom: 5px;
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.but {
+    background-color: black;
+    color: white;
+    min-width: 100px;
+    min-height: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+.but:hover {
+    min-width: 110px;
+    min-height: 40px;
+    transition: 0.5s;
+}
+
