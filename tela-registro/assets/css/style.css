@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgray;
+    position: relative;
+}
+.cabecalho {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.847);
+    color: white;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.cabecalho > a {
+    color: white;
+}
+.logo {
+    width: 40px;
+}
+.login,
+.login:hover,
+.login:active {
+    color:red;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px 15px 15px;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-around;
+}
+footer .content .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .content .links .link  {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer .content .links .link:hover,
+footer .content .links .link:active {
+    color: red;
+    transition: 0.5s;
+    text-decoration: none;
+}
+footer .direitos {
+    text-align: center;
+}
+footer .content .endereco p {
+    margin: 0;
+}
+footer .content .endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
