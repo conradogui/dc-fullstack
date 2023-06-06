@@ -5,46 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ebook -HTML e CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <main class="container">
-        <section class="intem-img">
+        <section class="item-img">
             <h1 class="titulo">[Ebook] guia do HTML e CSS</h1>
             <div class="separacao"></div>
             <p class="text">Dê seus primeiros passos com desenvolvimento web e aprenda a criar uma pagina do zero</p>
-            <img src="guia.png" alt="">
+            <img src="https://d335luupugsy2.cloudfront.net/cms/files/45279/1549910747/%24s8wt5gjksqp" alt="">
         </section>
         <section class="item-form">
             <form class="formulario">
                 <h2 class="titulo">Faça o download gratis aqui</h2>
                 <p class="text">Preencha o formulario gratis para acessar o ebook</p>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="">profissionalmente, voce se considera:</label>
-                <select name="profissionalmente" id="profissionalmente">
-                    <option value="" selected>Selecione</option>
-                    <option value="junior">Junior</option>
-                    <option value="pleno">Pleno</option>
-                    <option value="Senior">Senior</option>
-                </select>
-                <label for="objetivos"> Qual é o seu objetivo</label>
-                <select name="objetivo" id="objetivo">
-                    <option value="" selected>Selecione</option>
-                    <option value="iniciar">Entrar no mercado</option>
-                    <option value="melhorar">Aperfeiçoar minhas habilidades</option>
-                    <option value="networking">Aumentar meu networking</option>
-                </select>
-                <div class="radio">
-                    <p>Voce possui interesse em iniar o curso online?</p>
-                    <input type="radio" name="interesse-curso-online" id="sim" value="sim">
-                    <label for="sim">Sim</label>
-                    <input type="radio" name="interesse-curso-online" id="nao" value="nao">
-                    <label for="nao">Não</label>
+                <div class="fields">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="">profissionalmente, voce se considera:</label>
+                    <select name="profissionalmente" id="profissionalmente">
+                        <option value="" selected>Selecione</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                    <label for="objetivos"> Qual é o seu objetivo</label>
+                    <select name="objetivo" id="objetivo">
+                        <option value="" selected>Selecione</option>
+                        <option value="iniciar">Entrar no mercado</option>
+                        <option value="melhorar">Aperfeiçoar minhas habilidades</option>
+                        <option value="networking">Aumentar meu networking</option>
+                    </select>
+                    <div class="fields">
+                        <div class="radio">
+                            <p>Voce possui interesse em iniar o curso online?</p>
+                            <input type="radio" name="interesse-curso-online" id="sim" value="sim">
+                            <label for="sim">Sim</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="interesse-curso-online" id="nao" value="nao">
+                            <label for="nao">Não</label>
+                        </div>
+                    </div>
+                    <label for="pergunta">7 + 8 = ?</label>
+                    <input type="text" id="pergunta" name="pergunta">
                 </div>
-                <label for="pergunta">7 + 8 = ?</label>
-                <input type="text" id="pergunta" name="pergunta">
                 <button>Aprender HTML e CSS agora!</button>
             </form>
         </section>
