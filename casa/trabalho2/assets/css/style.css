@@ -12,6 +12,7 @@ body {
     max-width: 80vh;
     min-width: 80%;
     margin: auto;
+    margin-bottom: 20px;
 }
 .shopify-logo {
     width: 80px;
@@ -70,4 +71,116 @@ body {
     min-width: 25%;
     font-weight: 400;
     cursor: pointer;
+}
+.container {
+    margin-top: 40px;
+    width: 100%;
+}
+.temple {
+    width: 30%;
+    text-align: left;
+}
+.temple h4, 
+.temple p {
+    margin-top: 10px;
+    margin-bottom: 0px;    
+    font-family: 'Poppins', sans-serif;
+}
+.temple p {
+    font-weight: 100;
+    font-size: smaller;    
+}
+.demo {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    gap: 15px;
+}
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.temple2 {
+    margin-top: 10%;
+}
+.temple2 hr {
+    border: 0.5px solid rgba(128, 128, 128, 0.233);
+}
+.cee {
+    width: 8%;
+}
+.end {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+}
+.end b {
+    text-transform: uppercase;
+    color: #4F5152;
+    font-size: smaller;
+    font-weight: 900;
+}
+.container button {
+    margin: auto;
+    margin-top: 5%;
+    background-color: #027F61;
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 12px;
+    min-width: 10%;
+    font-weight: 400;
+    cursor: pointer;
+}
+footer {
+    background-color:#FAF9F7 ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+footer h3 {
+    color: #027F61;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.abr {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border-bottom: 1px solid #4f51525b;
+    font-weight: 600;
+}
+.abr button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.links {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    padding-bottom: 2%;
+    left: 60%;
+}
+a {
+    text-decoration: none;
+    color: #01a780;
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    font-weight: 400;
 }
