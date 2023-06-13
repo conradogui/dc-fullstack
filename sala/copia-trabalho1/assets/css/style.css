@@ -92,4 +92,13 @@
     gap: 5px;
     flex-wrap: wrap;
 }
+@media (min-width: 1000px) {
+    .container {
+        flex-direction: row;
+        padding: 40px;
+    }
+    .item-img {
+        width: 500px;
+    }
+}
 
