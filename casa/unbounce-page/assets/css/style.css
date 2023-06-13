@@ -47,7 +47,8 @@ header {
     display: flex; 
     justify-content: center;
     padding-left: 30px;
-    padding-right: 30px;               
+    padding-right: 30px; 
+    position: relative;              
     
 }
 header section {
@@ -55,17 +56,18 @@ header section {
     justify-content: center;
     flex-direction: column;
     align-items: start;
-    min-width: 30%;
-    max-width: 40%;
     gap: 10px;
-   
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: fit-content;
+    max-width: 45%;
+    min-width: none;
+       
 }
-header img {
-    object-position: center center;
-    object-fit: cover;
-    padding-bottom: 0;
-    min-width: 350px;
-    display: block;
+.image {
+    position: relative;
+    left:10%;   
     
 }
 section h1 {
