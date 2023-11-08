@@ -26,10 +26,22 @@ const convidados = [
     },
 ]
 
+
 function editarConvidado(id) {
     const convidado = convidados.find((convidado, index) => index === id)
     inputName.value = convidado.name
 }
+
+function alteraNome(id) {
+    
+}
+
+
+btnSend.addEventListener("click", (e) => {
+    e.preventDefault()
+    alteraNome()
+})
+
 function deletarConvidado(id) {
     convidados.splice(id, 1)
     content.innerHTML = ""
