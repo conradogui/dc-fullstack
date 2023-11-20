@@ -1,11 +1,9 @@
-import Lista from "./components/Lista"
+import { RouterProvider } from "react-router-dom"
+import { routes } from "./routes"
 
 function App() {
-const convidados = ["Guilherme", "Mariana", "Vitor"]
   return (
-    <div className="App">
-      <Lista nome="Convidados" items={convidados}/>
-    </div>
+    <RouterProvider router={routes}/> //provedor de rotas -> cria todas as rotas que nós informamos para ele
   )
 }
 
