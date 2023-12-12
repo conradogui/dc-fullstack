@@ -6,7 +6,7 @@ export function useUsersForm() {
         name: "",
         lastName: "",
     })
-
+    
     function handleUser(e) {
         setUser((prev) => ({
             ...prev,
@@ -15,11 +15,12 @@ export function useUsersForm() {
     }
 
     async function createUser() {
-        const response = await axios.post(
+        await axios.post(
             "https://656e487ebcc5618d3c24bf2a.mockapi.io/api/users",
             user
         )
     }
+    
 
     function handleSubmit(e) {
         e.preventDefault()
