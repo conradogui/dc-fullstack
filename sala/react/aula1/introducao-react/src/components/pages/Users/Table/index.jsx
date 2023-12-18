@@ -1,7 +1,9 @@
-// import { useUsersTable } from "./hooks/useTable"
+import { useUsersContext } from "../../../../context/UsersContext"
 
-export function UsersTable({users, deleteUser}) {
-    // const {users, deleteUser} = useUsersTable()
+export function UsersTable() {
+    
+    const {users, deleteUser} = useUsersContext()
+    
     return (
         <table>
             <thead>

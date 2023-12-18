@@ -1,9 +1,12 @@
 // import {useUsersForm} from "./useUsersForm"
 
+import { useUsersContext } from "../../../../context/UsersContext"
 
 
-export function Form({user, handleUser, handleSubmit}) {
+
+export function Form() {
     // const {user, handleUser, handleSubmit} = useUsersForm()
+    const { user, handleSubmit, handleUser } = useUsersContext()
     return (
         <form action="" className="flex flex-col gap-2 px-4 py-3 border rounded-md justify-center items-center bg-white shadow" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-1 w-full">

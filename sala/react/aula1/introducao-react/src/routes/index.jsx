@@ -3,6 +3,7 @@ import { MainLayout } from "../layouts/MainLayout";
 import { ClientsTable } from "../components/shared/Table/ClientsTable";
 import  UsersPage  from "../pages/Users"
 import Hooks from "../pages/Hooks";
+import { UsersProvider } from "../context/UsersContext";
 
 export const routes = createBrowserRouter([
   {
@@ -15,7 +16,9 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/usuario",
-        element: <UsersPage/>
+        element:<UsersProvider>
+                 <UsersPage/>
+                </UsersProvider> 
       },
       {
         path: "/clientes",
