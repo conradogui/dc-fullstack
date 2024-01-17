@@ -1,18 +1,82 @@
-const obj = [
-    {nome: "Guilherme", idade: 20, sexo: "masculino"},
-    {nome: "Joana", idade: 45, sexo: "Feminino"},
-    {nome: "Marcos", idade: 34, sexo: "masculino"},
-    {nome: "Pedro", idade: 78, sexo: "masculino"},
-    {nome: "Marcia", idade: 10, sexo: "Feminino"},
+const inputName = document.getElementById("name")
+const btnSend = document.getElementById("btn-send")
+const content = document.getElementById("content")
+
+
+const convidados = [
+    {
+        name: "Guilherme"
+    },
+    {
+        name: "Joao"
+    },
+    {
+        name: "Pedro"
+    },
+    {
+        name: "Maria"
+    },
+    {
+        name: "Carla"
+    },
+    {
+        name: "Mariana"
+    },
+    {
+        name: "Carlos"
+    },
 ]
 
-const nomes = obj.map(tira => tira.nome)
+let editingGuestId = null
 
-const nomesRetirados = nomes.join()
-console.log(nomesRetirados)
+//quando apertar o botao de editar essa função ira pegar o nome da lista e jogar no inputName
+function getConvidado(id) {
+    const convidado = convidados.find((element, index) => index === id )
+    inputName.value = convidado.name
+    editingGuestId = id //está sendo editado
+}
 
-// const nomes = ["guilherme", "joao", "pedro", "maria", "mariana"]
+function editandoConvidado() {
+    if(editingGuestId !== null) {
+        convidados[editingGuestId].name = inputName.value
+        inputName.value = ""
+        editingGuestId = null
+        alteraConvidado()
+    } else {
+        const novoNome = inputName.value
+        if(novoNome) {
+            convidados.push({name: novoNome})
+            inputName.value = ""
+            alteraConvidado()
+        }
+    }
+}
 
-// const tamanhoNome = elemento => elemento.length >= 10
+function deletaConvidado(id) {
+    convidados.splice(id, 1)
+    alteraConvidado()
+}
 
-// console.log(nomes.some(tamanhoNome))
+function alteraConvidado() {
+    content.innerHTML = ""
+    convidados.map((convidado, index) => {
+        return content.innerHTML += `
+            <li>
+                ${convidado.name}
+                <div class="btns-action">
+                    <button onclick="getConvidado(${index})">Editar</button>
+                    <button onclick="deletaConvidado(${index})">Excluir</button>
+                </div>
+            </li>
+        `
+    })
+}
+
+window.addEventListener("load", () => {
+    alteraConvidado()
+})
+
+btnSend.addEventListener("click", e => {
+    e.preventDefault()
+    editandoConvidado()
+})
